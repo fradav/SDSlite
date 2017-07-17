@@ -542,7 +542,6 @@ namespace NetCDFInterop
                 case PlatformID.Win32NT:
                     var name = "netcdf.dll";
                     // try find the file in current directory and then in directories from PATH environmental variable.
-                    System.Console.WriteLine("Path : " + Environment.GetEnvironmentVariable("PATH"));
                     var path = Enumerable.Repeat(Environment.CurrentDirectory, 1)
                         .Concat(Environment.GetEnvironmentVariable("PATH").Split(';'))
                         .FirstOrDefault(d => File.Exists(Path.Combine(d, name)));
