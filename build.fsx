@@ -25,7 +25,7 @@ Target "Clean" (fun _ ->
 
 Target "Build" (fun _ ->
     // compile all projects below src/app/
-    MSBuildReleaseExt buildDir [("Plaform","x64")] "Build" appReferences
+    MSBuildReleaseExt buildDir [("Platform","x64")] "Build" appReferences
     |> Log "AppBuild-Output: "
 )
 
