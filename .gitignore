@@ -321,5 +321,4 @@ __pycache__/
 *.xsd.cs
 
 #Vscode
-paket.lock
 build/

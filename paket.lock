@@ -1,0 +1,7 @@
+RESTRICTION: >= net461
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    DynamicInterop (0.8.1)
+    FAKE (4.62.5)
+    NuGet.CommandLine (4.1)
+    NUnit (3.7.1)
