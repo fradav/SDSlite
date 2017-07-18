@@ -1,2 +1,9 @@
-.nuget\Nuget.exe restore
-msbuild /m /t:Build /p:Configuration=Release /p:Platform=x64
+@echo off
+cls
+
+.paket\paket.exe restore
+if errorlevel 1 (
+  exit /b %errorlevel%
+)
+
+packages\FAKE\tools\FAKE.exe build.fsx %*

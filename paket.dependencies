@@ -1,0 +1,6 @@
+source https://api.nuget.org/v3/index.json
+framework: >= net461
+nuget FAKE
+nuget NuGet.Commandline
+nuget DynamicInterop
+nuget NUnit
