@@ -5,6 +5,7 @@ open Fake
 
 // Directories
 let buildDir  = "./build/"
+let binDir = "./bin/"
 
 // Filesets
 let appReferences  =
@@ -19,7 +20,7 @@ let version = "1.4.1"  // or retrieve from CI server
 
 // Targets
 Target "Clean" (fun _ ->
-    CleanDirs [buildDir]
+    CleanDirs [binDir;buildDir]
 )
 
 Target "Build" (fun _ ->
